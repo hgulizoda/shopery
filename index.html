@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoppery</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./sass/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top container flex justify-between items-center">
+        <a href="/" class="header-top_left flex items-center">
+          <img src="./assets/icons/location.svg" alt="" />
+          Store Location: Lincoln- 344, Illinois, Chicago, USA
+        </a>
+        <div class="header-top_right flex">
+          <select name="lang" class="lang">
+            <option value="eng">ENG</option>
+            <option value="rus">RUS</option>
+          </select>
+          <select name="cuurrency">
+            <option value="usd">USD</option>
+            <option value="uzs">UZS</option>
+          </select>
+          <p><a href="/">Sign in</a>/<a href="/">Sign up</a></p>
+        </div>
+      </div>
+      <div class="header-middle">
+        <div class="container flex justify-between items-center">
+          <a class="header-middle_logo flex items-center" href="/"
+            ><img src="./assets/icons/plant 1.svg" alt="" /> Ecobazar</a
+          >
+          <div class="flex">
+            <div class="header-middle_input flex items-center">
+              <img src="./assets/icons/Search.svg" alt="" />
+              <input type="text" placeholder="Search" />
+            </div>
+            <button>Search</button>
+          </div>
+          <div class="header-middle_left flex items-center">
+            <img src="./assets/icons/heart.svg" alt="" />
+            <div class="rightest flex items-center">
+              <img src="./assets/icons/shopping-bag.svg" alt="" />
+              <div>
+                <p>Shopping cart:</p>
+                <b>$57.00</b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container flex items-center justify-between">
+          <img src="./assets/icons/menu.svg" alt="" class="menu" />
+          <nav class="flex">
+            <select>
+              <option value="home">Home</option>
+            </select>
+            <select>
+              <option value="home">Shop</option>
+            </select>
+            <select>
+              <option value="home">Pages</option>
+            </select>
+            <select>
+              <option value="home">Blog</option>
+            </select>
+            <a href="/">About Us</a>
+            <a href="/">Contact Us</a>
+          </nav>
+          <a href="/" class="flex items-center">
+            <img src="./assets/icons/tel.svg" alt="" />
+            <p>(219) 555-0114</p>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero container flex">
+        <div class="hero-left">
+          <h2>Fresh & Healthy Organic Food</h2>
+          <div>
+            <b class="xl">Sale up to <span>30% OFF</span></b>
+            <p class="small">Free shipping on all your order.</p>
+          </div>
+          <button class="btn white">
+            Shop now <img src="./assets/icons/arrow.svg" alt="" />
+          </button>
+        </div>
+        <div class="hero-right">
+          <div class="hero-right_top">
+            <p class="uppercase">Summer Sale</p>
+            <h5>75% OFF</h5>
+            <p class="small">Only Fruit & Vegetable</p>
+            <button class="btn">
+              Shop now <img src="./assets/icons/arrow.svg" alt="" />
+            </button>
+          </div>
+          <div class="hero-right_bottom">
+            <p class="uppercase">Best Deal</p>
+            <h5>Special Products Deal of the Month</h5>
+            <button class="btn">
+              Shop now <img src="./assets/icons/arrow.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="qualities container">
+        <div class="qualities-box flex">
+          <img src="./assets/icons/delivery-truck 1.svg" alt="" />
+          <div>
+            <b class="medium">Free Shipping</b>
+            <p class="small">Free shipping on all your order</p>
+          </div>
+        </div>
+        <div class="qualities-box flex">
+          <img
+            src="./assets/icons/headphones 1.svg
+          "
+            alt=""
+          />
+          <div>
+            <b class="medium">Customer Support 24/7</b>
+            <p class="small">Instant access to Support</p>
+          </div>
+        </div>
+        <div class="qualities-box flex">
+          <img src="./assets/icons/shopping-bag.svg" alt="" />
+          <div>
+            <b class="medium">100% Secure Payment</b>
+            <p class="small">We ensure your money is save</p>
+          </div>
+        </div>
+        <div class="qualities-box flex">
+          <img src="./assets/icons/box.svg" alt="" />
+          <div>
+            <b class="medium">Money-Back Guarantee</b>
+            <p class="small">30 Days Money-Back Guarantee</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories container">
+        <div class="categories-top flex justify-between items-center">
+          <h5>Popular Categories</h5>
+          <button class="btn p-[0]">
+            View all <img src="./assets/icons/arrow.svg" alt="" />
+          </button>
+        </div>
+        <div class="categories-bottom">
+          <div class="categories-bottom_box">
+            <img src="./assets/images/fuits.png" alt="" />
+            <b class="large">Fresh Fruit</b>
+          </div>
+          <div class="categories-bottom_box">
+            <img src="./assets/images/basket.png" alt="" />
+            <b class="large">Fresh Vegetables</b>
+          </div>
+          <div class="categories-bottom_box">
+            <img src="./assets/images/fish.png" alt="" />
+            <b class="large">Meat & Fish</b>
+          </div>
+          <div class="categories-bottom_box">
+            <img src="./assets/images/snacks.png" alt="" />
+            <b class="large">Snacks</b>
+          </div>
+          <div class="categories-bottom_box">
+            <img src="./assets/images/drinks.png" alt="" />
+            <b class="large">Beverages</b>
+          </div>
+          <div class="categories-bottom_box">
+            <img src="./assets/images/hygene.png" alt="" />
+            <b class="large">Beauty & Health</b>
+          </div>
+          <div class="categories-bottom_box">
+            <img src="./assets/images/cookie.png" alt="" />
+            <b class="large">Bread & Bakery</b>
+          </div>
+          <div class="categories-bottom_box">
+            <img src="./assets/images/cocoa.png" alt="" />
+            <b class="large">Baking Needs</b>
+          </div>
+          <div class="categories-bottom_box">
+            <img src="./assets/images/rice.png" alt="" />
+            <b class="large">Cooking</b>
+          </div>
+          <div class="categories-bottom_box">
+            <img src="./assets/images/babyFood.png" alt="" />
+            <b class="large">Diabetic Food</b>
+          </div>
+          <div class="categories-bottom_box">
+            <img src="./assets/images/Cleaning Products.png" alt="" />
+            <b class="large">Dish Detergents</b>
+          </div>
+          <div class="categories-bottom_box">
+            <img src="./assets/images/oil.png" alt="" />
+            <b class="large">Oil</b>
+          </div>
+        </div>
+      </section>
+
+      <section class="popular container">
+        <div class="popular-top flex justify-between">
+          <h5>Popular Products</h5>
+          <button class="btn">
+            View All <img src="./assets/icons/arrow.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="popular-bottom">
+          <div class="popular-bottom_box">
+            <img src="./assets/images/3GreenApples.png" alt="" />
+            <p class="small">Green Apple</p>
+            <b class="medium">$14.99</b>
+            <div class="flex">
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/white.svg" alt="" />
+            </div>
+            <div class="position">
+              <img src="./assets/icons/shopping.svg" alt="" />
+            </div>
+          </div>
+          <div class="popular-bottom_box">
+            <img src="./assets/images/orange.png" alt="" />
+            <p class="small">Fresh Indian Malta</p>
+            <b class="medium">$14.99</b>
+            <div class="flex">
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/white.svg" alt="" />
+            </div>
+            <div class="position">
+              <img src="./assets/icons/shopping.svg" alt="" />
+            </div>
+          </div>
+          <div class="popular-bottom_box">
+            <img src="./assets/images/greens.png" alt="" />
+            <p class="small">Chinese cabbage</p>
+            <b class="medium">$14.99</b>
+            <div class="flex">
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/white.svg" alt="" />
+            </div>
+            <div class="position">
+              <img src="./assets/icons/shopping.svg" alt="" />
+            </div>
+          </div>
+          <div class="popular-bottom_box">
+            <img src="./assets/images/greenLeaves.png" alt="" />
+            <p class="small">Green Lettuce</p>
+            <b class="medium">$14.99</b>
+            <div class="flex">
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/white.svg" alt="" />
+            </div>
+            <div class="position">
+              <img src="./assets/icons/shopping.svg" alt="" />
+            </div>
+          </div>
+          <div class="popular-bottom_box">
+            <img src="./assets/images/eggplant.png" alt="" />
+            <p class="small">Eggplant</p>
+            <b class="medium">$14.99</b>
+            <div class="flex">
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/white.svg" alt="" />
+            </div>
+            <div class="position">
+              <img src="./assets/icons/shopping.svg" alt="" />
+            </div>
+          </div>
+          <div class="popular-bottom_box">
+            <img src="./assets/images/potatoes.png" alt="" />
+            <p class="small">Big Potatoes</p>
+            <b class="medium">$14.99</b>
+            <div class="flex">
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/white.svg" alt="" />
+            </div>
+            <div class="position">
+              <img src="./assets/icons/shopping.svg" alt="" />
+            </div>
+          </div>
+          <div class="popular-bottom_box">
+            <img src="./assets/images/corn.png" alt="" />
+            <p class="small">Corn</p>
+            <b class="medium">$14.99</b>
+            <div class="flex">
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/white.svg" alt="" />
+            </div>
+            <div class="position">
+              <img src="./assets/icons/shopping.svg" alt="" />
+            </div>
+          </div>
+          <div class="popular-bottom_box">
+            <img src="./assets/images/flower.png" alt="" />
+            <p class="small">Fresh Cauliflower</p>
+            <b class="medium">$14.99</b>
+            <div class="flex">
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/white.svg" alt="" />
+            </div>
+            <div class="position">
+              <img src="./assets/icons/shopping.svg" alt="" />
+            </div>
+          </div>
+          <div class="popular-bottom_box">
+            <img src="./assets/images/bell pepper.png" alt="" />
+            <p class="small">Bell Pepper</p>
+            <b class="medium">$14.99</b>
+            <div class="flex">
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/white.svg" alt="" />
+            </div>
+            <div class="position">
+              <img src="./assets/icons/shopping.svg" alt="" />
+            </div>
+          </div>
+          <div class="popular-bottom_box">
+            <img src="./assets/images/pepper.png" alt="" />
+            <p class="small">Green Chili</p>
+            <b class="medium">$14.99</b>
+            <div class="flex">
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/yellow.svg" alt="" />
+              <img src="./assets/icons/white.svg" alt="" />
+            </div>
+            <div class="position">
+              <img src="./assets/icons/shopping.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
