@@ -501,4 +501,229 @@ html body .large {
 }
 .popular-bottom_box .position img {
   width: 1.5rem;
+}
+
+.deals {
+  display: flex;
+  gap: 2.4rem;
+}
+@media (max-width: 1100px) {
+  .deals {
+    flex-direction: column;
+  }
+}
+.deals-box {
+  width: 33%;
+  border-radius: 0.8rem;
+  padding-block: 3.5rem 29rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 1100px) {
+  .deals-box {
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 4rem;
+  }
+}
+.deals-box .uppercase {
+  color: white;
+}
+.deals-box h3 {
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: white;
+  margin-block: 1.6rem 0.8rem;
+}
+.deals-box .btn {
+  margin-top: 2.4rem;
+}
+.deals-box.first {
+  background-image: url(./../assets/images/avocado.png);
+}
+.deals-box.first .time {
+  width: 70%;
+}
+.deals-box.first .time-top p {
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: white;
+}
+.deals-box.first .time-bottom {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  opacity: 0.8;
+}
+.deals-box.second {
+  background-image: url(./../assets/images/meat.png);
+}
+.deals-box.second .large {
+  color: white;
+}
+.deals-box.second .large span {
+  color: #ff8a00;
+}
+.deals-box.third {
+  background-image: url(./../assets/images/pokaDots.png);
+}
+.deals-box.third .uppercase,
+.deals-box.third h3 {
+  color: #333333;
+}
+.deals-box.third span {
+  background-color: #333333;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  color: #fcc900;
+}
+
+.hot {
+  margin-block: 12rem;
+}
+.hot-top .btn {
+  padding-right: 0;
+  align-items: center;
+}
+.hot-bottom {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "big big one two three" "big big four five six" "seven eight nine ten eleven";
+}
+.hot-bottom_box {
+  position: relative;
+  width: 26rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #e6e6e6;
+  padding: 1.2rem;
+}
+.hot-bottom_box p.small {
+  color: #4d4d4d;
+}
+.hot-bottom_box.big {
+  width: 100%;
+  height: 65rem;
+  grid-area: big;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hot-bottom_box.big .btn {
+  background-color: #00b207;
+  color: white;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.hot-bottom_box.big .large {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #00b207;
+  margin-block: 2.4rem 0.8rem;
+}
+.hot-bottom_box.big .price {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+.hot-bottom_box.big .aware {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #666666;
+  margin-block: 2rem 1rem;
+}
+.hot-bottom_box.big .time {
+  margin-bottom: 4rem;
+  width: 70%;
+}
+.hot-bottom_box.big .time-top p {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #4d4d4d;
+}
+.hot-bottom_box.big .time-bottom {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #666666;
+  opacity: 0.8;
+}
+.hot-bottom_box .position {
+  position: absolute;
+  right: 1rem;
+  bottom: 2rem;
+  background-color: #e6e6e6;
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: centers;
+}
+.hot-bottom_box .position img {
+  width: 1.5rem;
+}
+.hot-bottom .one {
+  grid-area: one;
+}
+.hot-bottom .two {
+  grid-area: two;
+}
+.hot-bottom .three {
+  grid-area: three;
+}
+.hot-bottom .four {
+  grid-area: four;
+}
+.hot-bottom .five {
+  grid-area: five;
+}
+.hot-bottom .six {
+  grid-area: six;
+}
+.hot-bottom .seven {
+  grid-area: seven;
+}
+.hot-bottom .eight {
+  grid-area: eight;
+}
+.hot-bottom .nine {
+  grid-area: nine;
+}
+.hot-bottom .ten {
+  grid-area: ten;
+}
+.hot-bottom .eleven {
+  grid-area: eleven;
 }/*# sourceMappingURL=main.css.map */
