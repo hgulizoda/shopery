@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./sass/details.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top container flex justify-between items-center">
+        <a href="/" class="header-top_left flex items-center">
+          <img src="./assets/icons/location.svg" alt="" />
+          Store Location: Lincoln- 344, Illinois, Chicago, USA
+        </a>
+        <div class="header-top_right flex">
+          <select name="lang" class="lang">
+            <option value="eng">ENG</option>
+            <option value="rus">RUS</option>
+          </select>
+          <select name="cuurrency">
+            <option value="usd">USD</option>
+            <option value="uzs">UZS</option>
+          </select>
+          <p><a href="/">Sign in</a>/<a href="/">Sign up</a></p>
+        </div>
+      </div>
+      <div class="header-middle">
+        <div class="container flex justify-between items-center">
+          <a class="header-middle_logo flex items-center" href="/"
+            ><img src="./assets/icons/plant 1.svg" alt="" /> Ecobazar</a
+          >
+          <div class="flex">
+            <div class="header-middle_input flex items-center">
+              <img src="./assets/icons/Search.svg" alt="" />
+              <input type="text" placeholder="Search" />
+            </div>
+            <button>Search</button>
+          </div>
+          <div class="header-middle_left flex items-center">
+            <img src="./assets/icons/heart.svg" alt="" />
+            <div class="rightest flex items-center">
+              <img src="./assets/icons/shopping-bag.svg" alt="" />
+              <div>
+                <p>Shopping cart:</p>
+                <b>$57.00</b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container flex items-center justify-between">
+          <img src="./assets/icons/menu.svg" alt="" class="menu" />
+          <nav class="flex">
+            <select>
+              <option value="home">Home</option>
+            </select>
+            <select>
+              <option value="home">Shop</option>
+            </select>
+            <select>
+              <option value="home">Pages</option>
+            </select>
+            <select>
+              <option value="home">Blog</option>
+            </select>
+            <a href="/">About Us</a>
+            <a href="/">Contact Us</a>
+          </nav>
+          <a href="/" class="flex items-center">
+            <img src="./assets/icons/tel.svg" alt="" />
+            <p>(219) 555-0114</p>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="detail container flex">
+        <div class="column">
+          <img src="./assets/icons/Arrow---Down-2 2.png" alt="" />
+          <div>
+            <img src="./assets/images/cabbage2.jpg" alt="" class="img" />
+            <img src="./assets/images/cabbagelaying.jpg" alt="" class="img" />
+            <img src="./assets/images/bell pepper.png" alt="" class="img" />
+            <img src="./assets/images/flower.png" alt="" class="img" />
+          </div>
+          <img src="./assets/icons/Arrow---Down-2 2.png" alt="" class="arrow" />
+        </div>
+        <img src="./assets/images/cabbage2.jpg" alt="" class="main" />
+        <div class="detail-right">
+          <h5>Chinese Cabbage</h5>
+          <div class="star flex">
+            <img src="./assets/icons/yellow.svg" alt="" /><img
+              src="./assets/icons/yellow.svg"
+              alt=""
+            /><img src="./assets/icons/yellow.svg" alt="" /><img
+              src="./assets/icons/yellow.svg"
+              alt=""
+            /><img src="./assets/icons/yellow.svg" alt="" />
+          </div>
+          <p class="price">$17.28</p>
+          <p class="small">
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+            per inceptos himenaeos. Nulla nibh diam, blandit vel consequat nec,
+            ultrices et ipsum. Nulla varius magna a consequat pulvinar.
+          </p>
+          <div class="buy flex">
+            <div class="count">
+              <button id="plus">+</button>
+              <p id="county">0</p>
+              <button id="minus">-</button>
+            </div>
+            <button class="btn">
+              Add to Cart <img src="./assets/icons/shopping.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
