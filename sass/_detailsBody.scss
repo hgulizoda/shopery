@@ -212,7 +212,7 @@
     .left {
       width: 50vw;
       .describe {
-        display: none;
+        display: flex;
         flex-direction: column;
         gap: 2rem;
 
@@ -288,7 +288,7 @@
     }
     .comments {
       width: 100%;
-
+      display: none;
       .comment {
         border-bottom: 1px solid #e6e6e6;
         padding-bottom: 2rem;

@@ -469,7 +469,7 @@ html body .large {
   width: 50vw;
 }
 .info-bottom .left .describe {
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 2rem;
 }
@@ -542,6 +542,7 @@ html body .large {
 }
 .info-bottom .comments {
   width: 100%;
+  display: none;
 }
 .info-bottom .comments .comment {
   border-bottom: 1px solid #e6e6e6;
