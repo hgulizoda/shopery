@@ -1,22 +1,20 @@
-const number = document.getElementById("county");
-const plus = document.getElementById("plus");
-const minus = document.getElementById("minus");
-let count = 0;
+document.querySelectorAll(".count").forEach((counter) => {
+  const number = counter.querySelector(".county");
+  const plus = counter.querySelector(".plus");
+  const minus = counter.querySelector(".minus");
 
-plus.addEventListener("click", () => {
-  count++;
-  number.textContent = count;
+  let value = 0;
+
+  plus.addEventListener("click", () => {
+    value++;
+    number.textContent = value;
+  });
+
+  minus.addEventListener("click", () => {
+    if (value > 0) value--;
+    number.textContent = value;
+  });
 });
-
-minus.addEventListener("click", () => {
-  count--;
-  if (count < 0) {
-    count = 0;
-  }
-  number.textContent = count;
-});
-
-number.textContent = count;
 
 let main = document.getElementById("main");
 

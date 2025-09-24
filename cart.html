@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./sass/cart.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top container flex justify-between items-center">
+        <a href="/" class="header-top_left flex items-center">
+          <img src="./assets/icons/location.svg" alt="" />
+          Store Location: Lincoln- 344, Illinois, Chicago, USA
+        </a>
+        <div class="header-top_right flex">
+          <select name="lang" class="lang">
+            <option value="eng">ENG</option>
+            <option value="rus">RUS</option>
+          </select>
+          <select name="cuurrency">
+            <option value="usd">USD</option>
+            <option value="uzs">UZS</option>
+          </select>
+          <p><a href="/">Sign in</a>/<a href="/">Sign up</a></p>
+        </div>
+      </div>
+      <div class="header-middle">
+        <div class="container flex justify-between items-center">
+          <a class="header-middle_logo flex items-center" href="/"
+            ><img src="./assets/icons/plant 1.svg" alt="" /> Ecobazar</a
+          >
+          <div class="flex">
+            <div class="header-middle_input flex items-center">
+              <img src="./assets/icons/Search.svg" alt="" />
+              <input type="text" placeholder="Search" />
+            </div>
+            <button>Search</button>
+          </div>
+          <div class="header-middle_left flex items-center">
+            <img src="./assets/icons/heart.svg" alt="" />
+            <div class="rightest flex items-center">
+              <a href="./cart.html">
+                <img src="./assets/icons/shopping-bag.svg" alt=""
+              /></a>
+              <div>
+                <p>Shopping cart:</p>
+                <b>$57.00</b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container flex items-center justify-between">
+          <img src="./assets/icons/menu.svg" alt="" class="menu" />
+          <nav class="flex">
+            <select>
+              <option value="home">Home</option>
+            </select>
+            <select>
+              <option value="home">Shop</option>
+            </select>
+            <select>
+              <option value="home">Pages</option>
+            </select>
+            <select>
+              <option value="home">Blog</option>
+            </select>
+            <a href="/">About Us</a>
+            <a href="/">Contact Us</a>
+          </nav>
+          <a href="/" class="flex items-center">
+            <img src="./assets/icons/tel.svg" alt="" />
+            <p>(219) 555-0114</p>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="bar">
+        <div class="container flex items-center">
+          <img src="./assets/icons/house.svg" alt="" />
+          <img src="./assets/icons/Arrow---Down-2 2.png" alt="" class="arrow" />
+          <p>Shopping cart</p>
+        </div>
+      </section>
+
+      <section class="cart container">
+        <h5>My Shopping Cart</h5>
+        <div class="flex cart-main">
+          <div class="cart-left">
+            <table>
+              <tr>
+                <th>Product</th>
+                <th>price</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+                <th></th>
+              </tr>
+              <tr>
+                <td class="flex items-center">
+                  <img src="./assets/images/bell pepper.png" alt="" />
+                  <p>Green Capsicum</p>
+                </td>
+                <td class="price">$14.00</td>
+                <td class="number">
+                  <div class="count flex">
+                    <button class="plus">+</button>
+                    <p class="county">0</p>
+                    <button class="minus">-</button>
+                  </div>
+                </td>
+                <td class="total">$70.00</td>
+                <td class="delete"><button>x</button></td>
+              </tr>
+              <tr>
+                <td class="flex items-center">
+                  <img src="./assets/images/bellpepperred.png" alt="" />
+                  <p>Red Capsicum</p>
+                </td>
+                <td class="price">$14.00</td>
+                <td class="number">
+                  <div class="count flex">
+                    <button class="plus">+</button>
+                    <p class="county">0</p>
+                    <button class="minus">-</button>
+                  </div>
+                </td>
+                <td class="total">$70.00</td>
+                <td class="delete"><button>x</button></td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <button onclick="location.href='index.html'">
+                    Return to Shop
+                  </button>
+                </td>
+
+                <td colspan="3">
+                  <div class="w-full flex justify-end">
+                    <button class="reset">Update Cart</button>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <div class="cart-left_bottom">
+              <p>Coupon Code</p>
+
+              <input type="text" placeholder="Enter code" />
+              <button>Apply Coupon</button>
+            </div>
+          </div>
+
+          <div class="cart-right">
+            <h6>Cart Total</h6>
+            <div>
+              <p>Subtotal:</p>
+              <b>$84.00</b>
+            </div>
+            <div>
+              <p>Shipping:</p>
+              <b>Free</b>
+            </div>
+            <div>
+              <p>Total:</p>
+              <b>$84.00</b>
+            </div>
+            <button>Proceed to checkout</button>
+          </div>
+        </div>
+      </section>
+      <section class="subscribe">
+        <div class="container">
+          <div class="subscribe-left">
+            <b>Subcribe our Newsletter</b>
+            <p class="small">
+              Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+              Phasellus imperdiet elit eu magna.
+            </p>
+          </div>
+          <div class="input flex">
+            <input type="text" placeholder="Your email address" />
+            <button class="btn">Subscribe</button>
+          </div>
+          <div class="icons flex">
+            <img src="./assets/icons/location.svg" alt="" />
+            <img src="./assets/icons/location.svg" alt="" />
+            <img src="./assets/icons/location.svg" alt="" />
+            <img src="./assets/icons/location.svg" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top container flex">
+        <div class="footer-top_left">
+          <a href="/" class="logo flex"
+            ><img src="./assets/icons/plant 1.svg" alt="" /> Ecobazar</a
+          >
+          <p class="small">
+            Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis
+            dui, eget bibendum magna congue nec.
+          </p>
+          <b class="flex"
+            ><p>(219) 555-0114</p>
+            <span>or</span>
+            <p>Proxy@gmail.com</p></b
+          >
+        </div>
+        <div class="flex flex-col">
+          <a href="/"> My Account</a>
+          <a href="/"> My Account</a>
+          <a href="/">Order History</a>
+          <a href="/"> Shopping Cart</a>
+          <a href="/"> Wishlist</a>
+        </div>
+        <div class="flex flex-col">
+          <a href="/"> Helps</a>
+          <a href="/"> Contact</a>
+          <a href="/">Faqs</a>
+          <a href="/"> Terms & Condition</a>
+          <a href="/"> Privacy Policy</a>
+        </div>
+        <div class="flex flex-col">
+          <a href="/"> Proxy</a>
+          <a href="/"> About</a>
+          <a href="/">Shop</a>
+          <a href="/"> Product</a>
+          <a href="/"> Track Order</a>
+        </div>
+        <div class="flex flex-col">
+          <a href="/"> Categories</a>
+          <a href="/"> Fruit & Vegetables</a>
+          <a href="/">Meat & Fish</a>
+          <a href="/"> Bread & Bakery</a>
+          <a href="/">Beauty & Health</a>
+        </div>
+      </div>
+      <div class="footer-bottom container flex justify-between">
+        <p class="small">Ecobazar eCommerce © 2021. All Rights Reserved</p>
+        <div class="icon">
+          <img src="./assets/icons/ApplePay.png" alt="" />
+          <img src="./assets/icons/ApplePay.png" alt="" />
+          <img src="./assets/icons/ApplePay.png" alt="" />
+          <img src="./assets/icons/ApplePay.png" alt="" />
+          <img src="./assets/icons/ApplePay.png" alt="" />
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
