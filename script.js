@@ -16,47 +16,35 @@ document.querySelectorAll(".count").forEach((counter) => {
   });
 });
 
-let main = document.getElementById("main");
+const modalOverlay = document.getElementById("modal-overlay");
+const modal = document.getElementById("modal-box");
+const closeModal = document.getElementById("close-modal");
+const modalBtn = document.getElementById("subscribe");
+modalBtn.style.cursor = "pointer";
 
-document.getElementById("img1").onclick = function () {
-  main.src = "./assets/images/cabbage2.jpg";
-};
+modalBtn.addEventListener("click", () => {
+  modalOverlay.classList.add("openedY");
+  modal.classList.add("openedY");
+});
 
-document.getElementById("img2").onclick = function () {
-  main.src = "./assets/images/cabbagelaying.jpg";
-};
+closeModal.addEventListener("click", () => {
+  modalOverlay.classList.remove("openedY");
+  modal.classList.remove("openedY");
+});
 
-document.getElementById("img3").onclick = function () {
-  main.src = "./assets/images/bell pepper.png";
-};
-document.getElementById("img4").onclick = function () {
-  main.src = "./assets/images/flower.png";
-};
+const drawerOverlay = document.getElementById("drawer-overlay");
+const drawer = document.getElementById("drawer-bar");
+const closeDrawer = document.getElementById("close-drawer");
+const drawerBtn = document.getElementById("cart");
+drawerBtn.style.cursor = "pointer";
+closeDrawer.style.cursor = "pointer";
 
-const descBtn = document.getElementById("description");
-const addiBtn = document.getElementById("infos");
-const feedBtn = document.getElementById("feedback");
-const descTable = document.getElementById("describe");
-const infoTable = document.getElementById("additional");
-const comTable = document.getElementById("comments");
-const right = document.getElementById("right");
-descBtn.onclick = function () {
-  descTable.style.display = "flex";
-  infoTable.style.display = "none";
-  comTable.style.display = "none";
-  right.style.display = "block";
-};
+drawerBtn.addEventListener("click", () => {
+  drawerOverlay.classList.add("openedX");
+  drawer.classList.add("openedX");
+});
 
-addiBtn.onclick = function () {
-  descTable.style.display = "none";
-  infoTable.style.display = "block";
-  comTable.style.display = "none";
-  right.style.display = "block";
-};
-
-feedBtn.onclick = function () {
-  descTable.style.display = "none";
-  infoTable.style.display = "none";
-  comTable.style.display = "block";
-  right.style.display = "none";
-};
+closeDrawer.addEventListener("click", () => {
+  drawerOverlay.classList.remove("openedX");
+  drawer.classList.remove("openedX");
+});

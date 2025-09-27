@@ -23,7 +23,7 @@
             <option value="usd">USD</option>
             <option value="uzs">UZS</option>
           </select>
-          <p><a href="/">Sign in</a>/<a href="/">Sign up</a></p>
+          <p id="subscribe"><a>Sign in</a>/<a>Sign up</a></p>
         </div>
       </div>
       <div class="header-middle">
@@ -41,9 +41,7 @@
           <div class="header-middle_left flex items-center">
             <img src="./assets/icons/heart.svg" alt="" />
             <div class="rightest flex items-center">
-              <a href="./cart.html">
-                <img src="./assets/icons/shopping-bag.svg" alt=""
-              /></a>
+              <img src="./assets/icons/shopping-bag.svg" alt="" id="cart" />
               <div>
                 <p>Shopping cart:</p>
                 <b>$57.00</b>
@@ -52,7 +50,7 @@
           </div>
         </div>
       </div>
-      <div class="header-bottom">
+      <div class="header-bottom" id="header-bottom">
         <div class="container flex items-center justify-between">
           <img src="./assets/icons/menu.svg" alt="" class="menu" />
           <nav class="flex">
@@ -78,7 +76,110 @@
         </div>
       </div>
     </header>
+
     <main>
+      <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-box" id="modal-box">
+          <button class="absolute" id="close-modal">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.75 1.25L1.25 13.75"
+                stroke="#1A1A1A"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M1.25 1.25L13.75 13.75"
+                stroke="#1A1A1A"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <img src="./assets/images/smilingGirl.jpg" alt="" />
+          <div class="modal-box_right">
+            <h2>Subcribe to Our Newsletter</h2>
+            <p>
+              Subscribe to our newlletter and Save your
+              <span>20% money</span> with discount code today.
+            </p>
+            <div class="input">
+              <input type="text" placeholder="Enter your email" />
+              <button>Subscribe</button>
+            </div>
+            <div class="check">
+              <input type="checkbox" id="checkbox" />
+              <label for="checkbox">Do not show this window</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="drawer-overlay" id="drawer-overlay">
+        <div class="drawer-box" id="drawer-bar">
+          <div class="drawer-top">
+            <button class="absolute" id="close-drawer">
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.75 1.25L1.25 13.75"
+                  stroke="#1A1A1A"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M1.25 1.25L13.75 13.75"
+                  stroke="#1A1A1A"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <h2>Shopping Card (2)</h2>
+            <div class="drawer-bar">
+              <img src="./assets/images/orange.png" alt="" />
+              <div>
+                <p>Fresh Indian Orange</p>
+                <b>1 kg x <span>12.00</span></b>
+              </div>
+              <button>x</button>
+            </div>
+            <div class="drawer-bar">
+              <img src="./assets/images/greenApple.png" alt="" />
+              <div>
+                <p>Green Apple</p>
+                <b>1 kg x <span>14.00</span></b>
+              </div>
+              <button>x</button>
+            </div>
+          </div>
+
+          <div class="drawer-bottom">
+            <div class="drawer-bottom_top">
+              <p>2 Product</p>
+              <b>$26.00</b>
+            </div>
+            <button class="checkout">Checkout</button>
+            <a href="./cart.html"> <button>Go To Cart</button></a>
+          </div>
+        </div>
+      </div>
+
       <section class="hero container flex">
         <div class="hero-left">
           <h2>Fresh & Healthy Organic Food</h2>
