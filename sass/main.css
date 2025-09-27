@@ -27,6 +27,9 @@ html {
     font-size: 5px;
   }
 }
+html body {
+  overflow-x: hidden;
+}
 html body .container {
   max-width: 1300px;
   margin-inline: auto;
@@ -550,7 +553,6 @@ html body .large {
 }
 .modal-overlay .modal-box {
   width: 55%;
-  height: 40%;
   transform: translateY(-100vh);
   background-color: white;
   padding: 1rem;
@@ -559,6 +561,7 @@ html body .large {
   position: relative;
   border-radius: 0.8rem;
   transition: all 0.3s ease;
+  aspect-ratio: 16/6;
 }
 .modal-overlay .modal-box.openedY {
   transform: translateY(0);

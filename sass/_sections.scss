@@ -283,7 +283,6 @@
 
   .modal-box {
     width: 55%;
-    height: 40%;
     transform: translateY(-100vh);
     background-color: white;
     padding: 1rem;
@@ -292,6 +291,7 @@
     position: relative;
     border-radius: 0.8rem;
     transition: all 0.3s ease;
+    aspect-ratio: 16/6;
     &.openedY {
       transform: translateY(0);
     }

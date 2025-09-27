@@ -27,6 +27,9 @@ html {
     font-size: 5px;
   }
 }
+html body {
+  overflow-x: hidden;
+}
 html body .container {
   max-width: 1300px;
   margin-inline: auto;
